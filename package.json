@@ -1,12 +1,12 @@
 {
-  "name": "sass-scss-converter",
+  "name": "sass-to-scss-converter",
   "version": "1.0.0",
   "description": "quickly convert .sass to .scss and compile to css.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Tommy Dunn <tommy@tommyldunn.com>",
   "license": "ISC",
   "devDependencies": {
     "bulma": "^0.5.3",

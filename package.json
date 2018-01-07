@@ -9,10 +9,21 @@
   "author": "Tommy Dunn <tommy@tommyldunn.com>",
   "license": "ISC",
   "devDependencies": {
-    "bulma": "^0.5.3",
+    "bulma": "^0.6.1",
     "gulp": "^3.9.1",
     "gulp-replace": "^0.6.1",
     "gulp-sass": "^3.1.0",
     "sass-convert": "^0.5.2"
-  }
+  },
+  "dependencies": {
+    "material-components-web": "^0.26.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tommyldunn/sass-to-scss-converter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Tommyldunn/sass-to-scss-converter/issues"
+  },
+  "homepage": "https://github.com/Tommyldunn/sass-to-scss-converter#readme"
 }

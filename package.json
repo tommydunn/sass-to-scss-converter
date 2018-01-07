@@ -8,15 +8,18 @@
   },
   "author": "Tommy Dunn <tommy@tommyldunn.com>",
   "license": "ISC",
-  "devDependencies": {
+  "devDependencies": {},
+  "dependencies": {
     "bulma": "^0.6.1",
     "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
     "gulp-replace": "^0.6.1",
     "gulp-sass": "^3.1.0",
-    "sass-convert": "^0.5.2"
-  },
-  "dependencies": {
-    "material-components-web": "^0.26.0"
+    "sass-convert": "^0.5.2",
+    "gulp-add-src": "^0.2.0",
+    "gulp-foreach": "^0.1.0",
+    "material-components-web": "^0.26.0",
+    "require-dir": "^0.3.2"
   },
   "repository": {
     "type": "git",

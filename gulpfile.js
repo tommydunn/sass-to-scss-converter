@@ -1,36 +1,16 @@
-// example uses bulma but works with any sass
-// In your terminal
-// 1. npm install -D sass-convert gulp bulma gulp-sass gulp-replace
-// 2. gem install sass
+/*
+  gulpfile.js
+  ===========
+  Rather than manage one giant configuration file responsible
+  for creating multiple tasks, each task has been broken out into
+  its own file in gulpfile.js/tasks. Any files in that directory get
+  automatically required below.
+  To add a new task, simply add a new task file that directory.
+  gulpfile.js/tasks/default.js specifies the default set of tasks to run
+  when you run `gulp`.
+*/
 
-const gulp = require("gulp"),
-replace = require('gulp-replace'),
-converter = require('sass-convert'),
-sass = require('gulp-sass');
+var requireDir = require('require-dir')
 
-gulp.task('sass', function () {
-  return gulp.src('./output/bulma.scss')
-  .pipe(sass().on('error', sass.logError))
-  .pipe(gulp.dest('./output/css'));
-});
-
-gulp.task('bulmaconvert', function () {
-  return gulp.src(
-    [
-      'node_modules/bulma/*.+(sass|scss)',
-      'node_modules/bulma/sass/**/*.+(sass|scss)'
-    ], {
-      base: './node_modules/bulma/'
-    })
-    .pipe(converter({
-      from: 'sass',
-      to: 'scss',
-      rename: true
-    }))
-    // Rename file paths in source files
-    .pipe(replace('.sass"', '.scss"'))
-    .pipe(gulp.dest('./output'));
-  });
-
-  // 3. gulp bulmaconvert
-  // 4. gulp sass
+// Require all tasks in gulpfile.js/tasks, including subfolders
+requireDir('./tasks', { recurse: true })

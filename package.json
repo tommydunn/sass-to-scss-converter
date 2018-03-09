@@ -1,32 +1,31 @@
 {
-  "name": "sass-to-scss-converter",
-  "version": "1.0.0",
-  "description": "quickly convert .sass to .scss and compile to css.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Tommy Dunn <tommy@tommyldunn.com>",
-  "license": "ISC",
-  "devDependencies": {},
-  "dependencies": {
-    "bulma": "^0.6.1",
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-replace": "^0.6.1",
-    "gulp-sass": "^3.1.0",
-    "sass-convert": "^0.5.2",
-    "gulp-add-src": "^0.2.0",
-    "gulp-foreach": "^0.1.0",
-    "material-components-web": "^0.26.0",
-    "require-dir": "^0.3.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Tommyldunn/sass-to-scss-converter.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Tommyldunn/sass-to-scss-converter/issues"
-  },
-  "homepage": "https://github.com/Tommyldunn/sass-to-scss-converter#readme"
+	"name": "sass-to-scss-converter",
+	"version": "1.0.0",
+	"description": "quickly convert .sass to .scss and compile to css.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Tommy Dunn <tommy@tommyldunn.com>",
+	"license": "ISC",
+	"devDependencies": {},
+	"dependencies": {
+		"bulma": "^0.6.2",
+		"gulp": "^3.9.1",
+		"gulp-add-src": "^0.2.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-foreach": "^0.1.0",
+		"gulp-replace": "^0.6.1",
+		"gulp-sass": "^3.1.0",
+		"require-dir": "^0.3.2",
+		"sass-convert": "^0.5.2"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Tommyldunn/sass-to-scss-converter.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Tommyldunn/sass-to-scss-converter/issues"
+	},
+	"homepage": "https://github.com/Tommyldunn/sass-to-scss-converter#readme"
 }
